@@ -44,7 +44,13 @@ idiomas.forEach(function(idioma){
 })
 const menu=document.getElementById("menu")
 menu.appendChild(dropMenu)
-
+ const body=document.getElementById("body")
+ body.innerHTML=`<div id="texto">
+ <h2>divertido, efectivo y gratis</h2>
+ <p>Aprender con Duolingo es divertido y los estudios demuestran que funciona. 
+     ¡En nuestras lecciones cortas ganarás puntos y habilitarás nuevas unidades 
+     al mismo tiempo que desarrollas tus habilidades de comunicación en la vida real!</p>
+</div>`;
 
 
 
