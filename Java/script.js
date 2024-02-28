@@ -8,14 +8,32 @@ const defaultOption=document.createElement("option")
 
 //Creacion de titulo y opciones del menu
 defaultOption.value=""
-defaultOption.text="Idiomas"
+defaultOption.text="Idioma de la pagina:Español"
 dropMenu.add(defaultOption)
+
+/*var content=0;
+function CalTime(){
+    var tiempo=setTimeout(Cambiar(),20);
+}
+{
+    function Cambiar(){
+        content ++;
+        if(content >105){
+            content=0;
+        }
+        document.getElementById("img").src="giphy/"+content+".gif"
+    }
+}*/
+
+//insercion de una prueba de un gif
+const gif=document.getElementById("gif")
+gif.src="/CSS/images/giphy.gif"
 
 //creacion de un arreglo para automatizar la insercion de los elementos del menu
 const idiomas= [{ nombre: "Español", emoji: "🇪🇸" },
-{ nombre: "Inglés", emoji: "🇬🇧" },
-{ nombre: "Ruso", emoji: "🇷🇺" },
-{ nombre: "Francés", emoji: "🇫🇷" },
+{ nombre: "Israel", emoji: "🇬🇧" },
+{ nombre: "Cestina", emoji: "🇷🇺" },
+{ nombre: "Griego", emoji: "🇫🇷" },
 { nombre: "Alemán", emoji: "🇩🇪" }
 ]
 idiomas.forEach(function(idioma){
