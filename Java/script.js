@@ -1,6 +1,14 @@
 //creacion del elemento logo y la insercion de la imagen del logo
-const logo = document.getElementById("logo");
-logo.src="/CSS/images/f92d5f2f7d56636846861c458c0d0b6c.svg";
+//const logo = document.getElementById("logo");
+//logo.src="/CSS/images/f92d5f2f7d56636846861c458c0d0b6c.svg";
+
+//creacion de la clase e insercion de la imagen del encabezado
+const head=document.createElement('head1');
+head.innerHTML=`<div class="header">
+<a href="../HTML/body.html">
+<img src="../CSS/images/f92d5f2f7d56636846861c458c0d0b6c.svg">
+</div>`;
+document.body.appendChild(head);
 
 //Creacion de la cajita de menu
 const dropMenu= document.createElement("select");
@@ -32,13 +40,21 @@ idiomas.forEach(function(idioma){
 const menu_1=document.createElement("menu1")
 document.body.appendChild(dropMenu)
 
-//creacion de la clase button y del texto que principal de la pagina
+//creacion del texto en grande principal de la pagina
+const texto=document.createElement("texto");
+texto.className="div";
+texto.innerHTML=`    <div class="text">
+<h1>¡La forma divertida, efectiva y <br>
+gratis de aprender un idioma!</h1>
+    </div>`;
+    document.body.appendChild(texto);
+
+    //creacion de las clases para los botones
 const body_1=document.createElement("body_1");
 body_1.className="div";
-body_1.innerHTML=`    <div class="text-buttons">
-<h1>¡La forma divertida, efectiva y gratis de aprender un idioma!</h1>
+body_1.innerHTML=` <div class="text-buttons">
 <button id="login" type="button">Empieza ahora</button>
-<button id="login2" type="button">Ya tengo una cuenta</button>
+<button id="login2" class="text-buttons2" type="button">Ya tengo una cuenta</button>
     </div>`;
     document.body.appendChild(body_1);
 
