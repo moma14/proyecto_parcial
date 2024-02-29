@@ -21,8 +21,13 @@ dropMenu.add(defaultOption)
 
 
 //insercion de una prueba de un gif
-//const gif12=document.getElementById("gif12")
-//gif12.src="/CSS/images/giphy.gif"
+const gif12=document.createElement("gif123");
+gif12.innerHTML=`<div class="gif">
+<a href="../HTML/body.html">
+<img src="../CSS/images/giphy4.gif">
+</div>`;
+document.body.appendChild(gif12);
+
 
 //creacion de un arreglo para automatizar la insercion de los elementos del menu
 const idiomas= [{ nombre: "Español", emoji: "🇪🇸" },
@@ -58,52 +63,54 @@ body_1.innerHTML=` <div class="text-buttons">
     </div>`;
     document.body.appendChild(body_1);
 
+    //aqui van las banderas
+
     //creacion del texto
  const body=document.createElement("body");
  body.innerHTML=`<div id="texto">
  <h2>divertido, efectivo y gratis</h2>
- <p>Aprender con Duolingo es divertido y los estudios demuestran que funciona. 
-     ¡En nuestras lecciones cortas ganarás puntos y habilitarás nuevas unidades 
-     al mismo tiempo que desarrollas tus habilidades de comunicación en la vida real!</p>
+ <p>Aprender con Duolingo es divertido y los estudios demuestran <br>que funciona. 
+     ¡En nuestras lecciones cortas ganarás puntos y <br>habilitarás nuevas unidades 
+     al mismo tiempo que desarrollas <br>tus habilidades de comunicación en la vida real!</p>
 </div>`;
 document.body.appendChild(body);
 
 //creacion del segundo texto
 const body_3=document.createElement("body3")
-body_3.innerHTML=`<h3>respaldado por la ciencia</h3>
-<p>Gracias a la combinación de métodos de enseñanza respaldados por la ciencia y un contenido 
-entretenido, creamos cursos que enseñan de forma eficiente a leer, escribir, entender y hablar 
-en otros idiomas.</p>`;
+body_3.innerHTML=`<div id="text1">
+<h3>respaldado por la ciencia</h3>
+<p>Gracias a la combinación de métodos de enseñanza respaldados <br>por la ciencia y un contenido 
+entretenido, creamos cursos que <br> enseñan de forma eficiente a leer, escribir, entender y hablar 
+en<br> otros idiomas.</p> </div>`;
 document.body.appendChild(body_3);
 
 //creacion del tercer texto
 const body_4=document.createElement("body4")
-body_4.innerHTML=`<h3>mantén tu motivación</h3>
-<p>Nuestras funcionalidades y desafíos son divertidos y hacen que 
-aprender se sienta como un juego. ¡Vas a poder formar un hábito de 
-aprendizaje sin esfuerzo! Y, por supuesto, recibirás recordatorios 
-de nuestra adorable mascota, Duo, el búho.</p>`;
+body_4.innerHTML=`<div id="text2">
+<h3>mantén tu motivación</h3>
+<p>Nuestras funcionalidades y desafíos son divertidos y hacen que <br>
+aprender se sienta como un juego. ¡Vas a poder formar un hábito de <br>
+aprendizaje sin esfuerzo! Y, por supuesto, recibirás recordatorios <br>
+de nuestra adorable mascota, Duo, el búho.</p></div>`;
 document.body.appendChild(body_4);
 
 //creacion del cuarto texto
 const body_5=document.createElement("body5")
-body_5.innerHTML=`<h3>aprendizaje personalizado</h3>
+body_5.innerHTML=`<div id="text3>
+<h3>aprendizaje personalizado</h3>
 <p>Al combinar lo mejor de la inteligencia artificial y las ciencias de 
-idiomas, las lecciones se adaptan según tu desempeño para ayudarte a aprender
-al nivel adecuado y a tu propio ritmo.
-</p>`;
+idiomas,<br> las lecciones se adaptan según tu desempeño para ayudarte a aprender
+al nivel<br> adecuado y a tu propio ritmo.
+</p></div>`;
 document.body.appendChild(body_5);
 
 //creacion de un titulo en grande
 const body_6=document.createElement("body6")
-body_6.innerHTML=`<h3>aprende cuando quieras y donde quieras</h3>`;
+body_6.innerHTML=`<div id="titulo1>
+<h3>aprende cuando quieras y donde quieras</h3></div>`;
 document.body.appendChild(body_6);
 
-//const gifis=document.createElement("gifis")
-//gifis.id = "gif1";
-//const gif=document.getElementById("gif1")
-//gifis.src="/CSS/images/gifazul.gif"
-//document.body.appendChild(gifis);
+
 
 
 

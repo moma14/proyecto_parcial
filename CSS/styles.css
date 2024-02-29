@@ -14,6 +14,12 @@ body {
     margin-top: 11px;
     cursor: pointer;
   }
+  .gif{
+    height: 100px;
+    margin-right: 300px;
+    margin-top: -100px;
+  
+  }
   .button-container {
     display: flex;
     flex-direction: column;
@@ -39,7 +45,7 @@ body {
     justify-content: center;
   }
   button {
-    min-width: 50%;
+    min-width: 70%;
     border-radius: 16px;
     justify-content: center;
     color: #fff;
@@ -70,8 +76,30 @@ body {
    }
    .text{
     margin-left: 650px;
-  
    }
+   #texto{
+    margin-right: 400px;
+    margin-top: 70px;
+   }
+
+   #text1{
+    margin-left: 700px;
+    margin-top: 200px;
+   }
+
+   #text2{
+    margin-right: 390px;
+    margin-top: 100px;
+   }
+   #text3{
+    margin-left: 390px;
+    margin-top: 100px;
+   }
+   #titulo1{
+    align-items: center;
+    margin-top: 100px;
+   }
+   
  
   
  
