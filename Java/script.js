@@ -77,7 +77,7 @@ body_1.innerHTML=` <div class="text-buttons">
 
     //aqui van las banderas
 
-    //creacion del texto
+    //creacion del primer texto
  const body=document.createElement("body");
  body.innerHTML=`<div id="texto">
  <div id="titulo1">

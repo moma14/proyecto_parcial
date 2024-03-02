@@ -255,7 +255,7 @@ body {
   }
 
   .body {
-    padding: 30px;
+    padding: 16px;
   }
   
   .sticky {
@@ -263,6 +263,10 @@ body {
     top: 0px;
     width: 100%;
   }
+  .sticky + .content {
+    padding-top: 60px;
+  }
+  
 
 
   
