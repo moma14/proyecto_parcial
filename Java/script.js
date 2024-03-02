@@ -129,16 +129,15 @@ document.body.appendChild(body_6);
 //creacion de una clase para la insercion de un gif
 
 
-const gif_2=document.createElement("gif2")
-gif_2.innerHTML=`<div class="gif2">
-<a href="../HTML/body.html">
-<img src="../CSS/images/gifazul.gif">
-</div>`
-document.body.appendChild(gif_2);
+
 
 const titulo1=document.createElement("titulo1");
 titulo1.className="div";
 titulo1.innerHTML=` 
+<div class="gif2">
+<div id="gify"
+<a href="../HTML/body.html">
+<img src="../CSS/images/gifazul.gif"></div></div>
 <div class="text-buttons2">
 <button id="prueba" type="button"> PRUEBA 2 SEMANAS GRATIS</button>
     </div>`;
