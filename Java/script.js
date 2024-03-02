@@ -11,9 +11,9 @@ head.innerHTML=`<div class="header">
 document.body.appendChild(head);*/
 
 const sticky=document.createElement("sticky1");
-sticky.innerHTML=`<div id="navbar">
-<div class="sticky">
-<div class="header">
+sticky.innerHTML=`<div id="navbar" >
+<div class="sticky" >
+<div class="header" >
 <a href="../HTML/body.html">
 <img src="../CSS/images/f92d5f2f7d56636846861c458c0d0b6c.svg">
 </div>
@@ -80,7 +80,8 @@ body_1.innerHTML=` <div class="text-buttons">
     //creacion del texto
  const body=document.createElement("body");
  body.innerHTML=`<div id="texto">
- <h2>divertido, efectivo y gratis</h2>
+ <div id="titulo1">
+<h3>divertido, efectivo y <br>gratis</h3></div>
  <p>Aprender con Duolingo es divertido y los estudios demuestran <br>que funciona. 
      ¡En nuestras lecciones cortas ganarás puntos y <br>habilitarás nuevas unidades 
      al mismo tiempo que desarrollas <br>tus habilidades de comunicación en la vida real!</p>
@@ -90,7 +91,8 @@ document.body.appendChild(body);
 //creacion del segundo texto
 const body_3=document.createElement("body3")
 body_3.innerHTML=`<div id="text1">
-<h3>respaldado por la ciencia</h3>
+<div id="titulo2">
+<h3>respaldado por la <br> ciencia</h3></div>
 <p>Gracias a la combinación de métodos de enseñanza respaldados <br>por la ciencia y un contenido 
 entretenido, creamos cursos que <br> enseñan de forma eficiente a leer, escribir, entender y hablar 
 en<br> otros idiomas.</p> </div>`;
@@ -99,7 +101,8 @@ document.body.appendChild(body_3);
 //creacion del tercer texto
 const body_4=document.createElement("body4")
 body_4.innerHTML=`<div id="text2">
-<h3>mantén tu motivación</h3>
+<div id="titulo3">
+<h3>mantén tu <br>motivación</h3></div>
 <p>Nuestras funcionalidades y desafíos son divertidos y hacen que <br>
 aprender se sienta como un juego. ¡Vas a poder formar un hábito de <br>
 aprendizaje sin esfuerzo! Y, por supuesto, recibirás recordatorios <br>
@@ -108,8 +111,9 @@ document.body.appendChild(body_4);
 
 //creacion del cuarto texto
 const body_5=document.createElement("body5")
-body_5.innerHTML=`<div id="text3>
-<h3>aprendizaje personalizado</h3>
+body_5.innerHTML=`<div id="text3">
+<div id="titulo4">
+<h3>aprendizaje <br>personalizado</h3></div>
 <p>Al combinar lo mejor de la inteligencia artificial y las ciencias de 
 idiomas,<br> las lecciones se adaptan según tu desempeño para ayudarte a aprender
 al nivel<br> adecuado y a tu propio ritmo.
@@ -118,8 +122,8 @@ document.body.appendChild(body_5);
 
 //creacion de un titulo en grande
 const body_6=document.createElement("body6")
-body_6.innerHTML=`<div id="titulo1">
-<h3>aprende cuando quieras y donde quieras</h3></div>`;
+body_6.innerHTML=`<div id="titulo10" >
+<h3>aprende cuando<br> quieras y donde <br>quieras</h3></div>`;
 document.body.appendChild(body_6);
 
 //creacion de una clase para la insercion de un gif
@@ -140,10 +144,11 @@ titulo1.innerHTML=`
     </div>`;
     document.body.appendChild(titulo1);
     
-
+//primer texto con botones
 const body_7=document.createElement("body7")
 body_7.innerHTML=`<div id="text4">
-<h3>duolingo english test</h3>
+<div id="titulo5">
+<h3>duolingo english test</h3></div>
 <p>Nuestro examen de inglés es conveniente, rápido y económico. <br>
 El Duolingo English Test integra los últimos avances en la<br> ciencia 
 e inteligencia artificial para dar a todas las personas la <br> posibilidad 
@@ -159,9 +164,11 @@ boton.innerHTML=`
     </div>`;
     document.body.appendChild(boton);
 
+//segundo texto con botones
 const body_8=document.createElement("body8")
 body_8.innerHTML=`<div id="text5">
-<h3>duolingo for schools</h3>
+<div id="titulo6">
+<h3>duolingo for schools</h3></div>
 <p>
 Maestras y maestros: ¡estamos para ayudarlos! Nuestra <br>
 herramienta gratuita ayuda a tus estudiantes a aprender <br>
@@ -178,10 +185,11 @@ boton2.innerHTML=`
     </div>`;
     document.body.appendChild(boton2);
 
-
+//tercer texto con botones
 const body_9=document.createElement("body9")
 body_9.innerHTML=`<div id="text6">
-<h3>duolingo abc</h3>
+<div id="titulo7">
+<h3>duolingo abc</h3></div>
 <p>
 ¡Desde aprender idiomas hasta alfabetismo! Con lecciones de <br>
 fonética y cuentos divertidos, Duolingo ABC enseña a niños y <br>
@@ -197,18 +205,19 @@ boton3.innerHTML=`
 <button id="ingles3" type="button"> CONOCE DUOLINGO ABC</button>
     </div>`;
     document.body.appendChild(boton3);
-
+    
+//cuarto texto con botones
 const body_10=document.createElement("body10")
 body_10.innerHTML=
 `<div id="text7">
-<h3>duolingo math</h3>
+<div id="titulo8">
+<h3>duolingo math</h3></div>
 <p>
 ¡Prueba nuestras lecciones cortas y gratis para matemáticas! <br>
 Con Duolingo Math, los estudiantes podrán adelantarse en sus <br>
  clases de matemáticas y los adultos podrán practicar para <br>
  mejorar su destreza matemática.
 </p></div>`;
-
 document.body.appendChild(body_10);
 
 const boton4=document.createElement("boton4");
@@ -220,8 +229,8 @@ boton4.innerHTML=`
     document.body.appendChild(boton4);
 
 const body_11=document.createElement("body11")
-body_11.innerHTML=`<div id="titulo2">
-<h3>aprende idiomas con duolingo</h3></div>`;
+body_11.innerHTML=`<div id="titulo9">
+<h3>aprende idiomas<br> con duolingo</h3></div>`;
 document.body.appendChild(body_11);
 
 

@@ -1,3 +1,5 @@
+@import url(https://db.onlinewebfonts.com/c/ab596f21664c5582567537d241e2a53e?family=DIN+Next+Rounded+LT+W01+Regular);
+@import url(https://db.onlinewebfonts.com/c/14936bb7a4b6575fd2eee80a3ab52cc2?family=Feather+Bold);
 
 
 body {
@@ -10,6 +12,7 @@ body {
   }
   
   .header{
+ 
     margin-right: 808px;
     margin-top: 11px;
     cursor: pointer;
@@ -34,7 +37,7 @@ body {
   }
   
   button {
-    min-width: 70%;
+    min-width: 100%;
     border-radius: 16px;
     justify-content: center;
     color: #fff;
@@ -42,7 +45,7 @@ body {
     border-bottom: 6px solid #3e8f04;
     margin: 10px;
     transition: all 0.1s;
-    padding: 12px 16px;
+    padding: 14px 16px;
     background-color:#58cc03;
     cursor: pointer;
   }
@@ -55,11 +58,12 @@ body {
     justify-content: center;
   }
  .text-buttons2{
-    align-items: center;
+    align-items:center;
     color: #1695df;
     background-color: #fffcfc;
     border-color: #cfc8c8;
   }
+ 
   #login2:hover {
     background-color: #f1e9e9;
     color: #1695df;
@@ -72,41 +76,77 @@ body {
   }
 
   .text-buttons{
-    margin-left: 800px;
+    margin-left: 500px;
    }
    .text{
-    margin-left: 650px;
+    margin-top: 170px;
+    margin-left: 500px;
+    color: #0c0c0cb7;
    }
-   #texto{
-    margin-right: 400px;
-    margin-top: 70px;
-   }
-
-   #text1{
-    margin-left: 700px;
-    margin-top: 250px;
-   }
-
-   #text2{
-    margin-right: 390px;
-    margin-top: 250px;
-   }
-   #text3{
-    margin-left: 390px;
-    margin-top: 300px;
-   }
-   /*propiedades del titulo */
+   
    #titulo1{
     align-items: center;
     margin-top: 100px;
+    color: #58cc02;
+    font-size: 255%;
    }
+   #texto{
+    margin-right: 500px;
+    margin-top: 70px;
+    font-family: 'Feather Bold';
+    color: #808080;
+   }
+   
+   #titulo2{
+    color: #58cc02;
+    font-size: 255%;
+   } 
+   #text1{
+    margin-left: 490px;
+    margin-top: 250px;
+    font-family: 'Feather Bold';
+    color: #808080;
+   }
+   
+   
+   #titulo3{
+    color: #58cc02;
+    font-size: 255%;
+   } 
+   #text2{
+    margin-right: 450px;
+    margin-top: 250px;
+    font-family: 'Feather Bold';
+    color: #808080;
+   }
+
+   #titulo10{
+    align-items: center;
+    margin-top: 100px;
+    color: #0c0666;
+    font-family: 'Feather Bold';
+    font-size: 255%;
+   } 
+/*propiedades del texto 4 con su respectivo titulo y del boton que esta debajo*/
+   #titulo4{
+    color: #58cc02;
+    font-size: 255%;
+   } 
+   #text3{
+    margin-left: 620px;
+    margin-top: 300px;
+    font-family: 'Feather Bold';
+    color: #808080;
+   }
+   /*propiedades del titulo */
+
 
    .gif2{
     margin-top: 250px;
     margin-right: 500px;
   
   }
-   /*propiedades del boton de prueba gratuita*/
+   
   #prueba{
     background-color: #ffffff;
     color: #1695df;
@@ -114,12 +154,19 @@ body {
     margin-left:600px;
     min-width: 30%;
   }
-/*propiedades del texto 4*/
+
+ /*propiedades del texto 4 con su respectivo titulo y del boton que esta debajo*/
+ #titulo5{
+  color: #58cc02;
+  font-size: 255%;
+ } 
   #text4{
-    margin-right: 430px;
+    margin-right: 490px;
     margin-top: 250px;
+    font-family: 'Feather Bold';
+    color: #808080;
    }
-/*propiedades del boton para el texto 4*/
+   
    #ingles{
     background-color: #ffffff;
     color: #1695df;
@@ -127,12 +174,17 @@ body {
     margin-right:700px;
     min-width: 30%;
   }
-/*propiedades del texto 5*/
+ /*propiedades del texto 5 con su respectivo titulo y del boton que esta debajo*/
+ #titulo6{
+  color: #58cc02;
+  font-size: 255%;
+ } 
    #text5{
-    margin-left: 430px;
+    margin-left: 545px;
     margin-top: 250px;
+    font-family: 'Feather Bold';
+    color: #808080;
    }
-   /*propiedades del boton para el texto 5*/
    #ingles2{
     background-color: #ffffff;
     color: #1695df;
@@ -140,12 +192,18 @@ body {
     margin-left:600px;
     min-width: 30%;
   }
-   /*propiedades del texto 6*/
-   #text6{
-    margin-right: 430px;
-    margin-top: 250px;
-   }
 
+   /*propiedades del texto 6 con su respectivo titulo y del boton que esta debajo*/
+   #titulo7{
+    font-size: 255%;
+    color: #58cc02;
+   } 
+   #text6{
+    margin-right: 480px;
+    margin-top: 250px;
+    font-family: 'Feather Bold';
+    color: #808080;
+   }
    #ingles3{
     background-color: #ffffff;
     color: #1695df;
@@ -154,12 +212,17 @@ body {
     min-width: 30%;
   }
 
-
+ /*propiedades del texto 7 con su respectivo titulo y del boton que esta debajo*/
+ #titulo8{
+  color: #58cc02;
+  font-size: 255%;
+ }
    #text7{
-    margin-left: 430px;
+    margin-left: 540px;
     margin-top: 250px;
+    font-family: 'Feather Bold';
+    color: #808080;
    }
-
    #ingles4{
     background-color: #ffffff;
     color: #1695df;
@@ -168,9 +231,12 @@ body {
     min-width: 30%;
   }
 
-   #titulo2{
+   #titulo9{
     align-items: center;
     margin-top: 100px;
+    color: #58cc02;
+    font-family: 'Feather Bold';
+    font-size: 255%;
    }
 
 
@@ -180,27 +246,24 @@ body {
     
   }
   
-  /* Navbar links */
+  /*propiedades del sticky*/
   #navbar {
     margin-right: 988px;
     display: block;
     padding: 10px;
     text-decoration: none;
   }
-  
-  /* Page content */
+
   .body {
-    padding: 16px;
+    padding: 30px;
   }
   
-  /* The sticky class is added to the navbar with JS when it reaches its scroll position */
   .sticky {
     position: fixed;
     top: 0px;
     width: 100%;
   }
-  
-  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+
 
   
 
