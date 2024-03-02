@@ -92,22 +92,33 @@ body {
    }
    #texto{
     margin-right: 500px;
-    margin-top: 70px;
+    margin-top: 50px;
     font-family: 'Feather Bold';
     color: #808080;
    }
-   
+   #gify2{
+    width: 100px;
+    height: 30px;
+    margin-left: 700px;
+    margin-top: 100px;
+   }
+   /*propiedades del texto 3 con su respectivo titulo y del boton que esta debajo*/
    #titulo2{
     color: #58cc02;
     font-size: 255%;
    } 
    #text1{
     margin-left: 490px;
-    margin-top: 250px;
+    margin-top: 130px;
     font-family: 'Feather Bold';
     color: #808080;
    }
-   
+    #gify3{
+    width: 100px;
+    height: 0px;
+    margin-right: 600px;
+    margin-top: 100px;
+   }
    
    #titulo3{
     color: #58cc02;
@@ -115,9 +126,15 @@ body {
    } 
    #text2{
     margin-right: 450px;
-    margin-top: 250px;
+    margin-top: 150px;
     font-family: 'Feather Bold';
     color: #808080;
+   }
+   #gify4{
+    width: 100px;
+    height: 0px;
+    margin-left: 700px;
+    margin-top: 100px;
    }
 
    #titulo10{

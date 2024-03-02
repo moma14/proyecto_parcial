@@ -79,7 +79,11 @@ body_1.innerHTML=` <div class="text-buttons">
 
     //creacion del primer texto
  const body=document.createElement("body");
- body.innerHTML=`<div id="texto">
+ body.innerHTML=`<div class="gif3">
+ <div id="gify2"
+ <a href="../HTML/body.html">
+ <img src="../CSS/images/giphy2.gif"></div></div>
+ <div id="texto">
  <div id="titulo1">
 <h3>divertido, efectivo y <br>gratis</h3></div>
  <p>Aprender con Duolingo es divertido y los estudios demuestran <br>que funciona. 
@@ -90,7 +94,11 @@ document.body.appendChild(body);
 
 //creacion del segundo texto
 const body_3=document.createElement("body3")
-body_3.innerHTML=`<div id="text1">
+body_3.innerHTML=`<div class="gif4">
+<div id="gify3"
+<a href="../HTML/body.html">
+<img src="../CSS/images/giphy3.gif"></div></div>
+<div id="text1">
 <div id="titulo2">
 <h3>respaldado por la <br> ciencia</h3></div>
 <p>Gracias a la combinación de métodos de enseñanza respaldados <br>por la ciencia y un contenido 
@@ -100,7 +108,11 @@ document.body.appendChild(body_3);
 
 //creacion del tercer texto
 const body_4=document.createElement("body4")
-body_4.innerHTML=`<div id="text2">
+body_4.innerHTML=`<div class="gif5">
+<div id="gify4"
+<a href="../HTML/body.html">
+<img src="../CSS/images/giphy.gif"></div></div>
+<div id="text2">
 <div id="titulo3">
 <h3>mantén tu <br>motivación</h3></div>
 <p>Nuestras funcionalidades y desafíos son divertidos y hacen que <br>
@@ -130,7 +142,7 @@ document.body.appendChild(body_6);
 
 
 
-
+//creacion de la seccion de super duolingo
 const titulo1=document.createElement("titulo1");
 titulo1.className="div";
 titulo1.innerHTML=` 
