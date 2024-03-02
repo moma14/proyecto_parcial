@@ -32,7 +32,6 @@ body {
     letter-spacing: -0.15px;
     margin-top: -4.5px;
     margin-left: 550px;
-    transition: none;
   }
 
   /*FIN DEL MENU*/
@@ -83,7 +82,7 @@ body {
   .text-buttons{
    margin-left: 200px;
   }
-  
+   /*personalizacion del boton de empieza ahora*/
   #login:hover {
     background-color: #79e72a;
     border-color: #58cc03;
@@ -95,7 +94,9 @@ body {
     background-color: #fffcfc;
     border-color: #cfc8c8;
   }
- 
+   /*fin de la personalizacion*/
+
+ /*personalizacion del boton de ya tengo una cuenta*/
   #login2:hover {
     background-color: #f1e9e9;
     color: #1695df;
