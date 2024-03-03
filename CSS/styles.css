@@ -15,7 +15,7 @@ body {
     float: right;
   }
   .btnenca{
-    align-items: center;
+    align-items:flex-start;
     display: flex;
     white-space: nowrap;
     border: none;
@@ -30,8 +30,8 @@ body {
     opacity: 0.5;
     font-size:16px;
     letter-spacing: -0.15px;
-    margin-top: -4.5px;
-    margin-left: 550px;
+    margin-top: 19px;
+    margin-left: 600px;
   }
 
   /*FIN DEL MENU*/
@@ -39,7 +39,7 @@ body {
 /*Posicion de todo el encabezado*/
   .header{
  
-    margin-right: 405px;
+    margin-right: 280px;
     margin-top: 11px;
     cursor: pointer;
   }
@@ -132,7 +132,7 @@ body {
    #gify2{
     width: 100px;
     height: 30px;
-    margin-left: 700px;
+    margin-left: 600px;
     margin-top: 100px;
    }
    /*propiedades del texto 3 con su respectivo titulo y del boton que esta debajo*/
@@ -172,7 +172,7 @@ body {
 
    #titulo10{
     align-items: center;
-    margin-top: 100px;
+    margin-top: 300px;
     color: #0c0666;
     font-family: 'Feather Bold';
     font-size: 255%;
@@ -184,9 +184,15 @@ body {
    } 
    #text3{
     margin-left: 620px;
-    margin-top: 300px;
+    margin-top: 200px;
     font-family: 'Feather Bold';
     color: #808080;
+   }
+   #gify5{
+    width: 100px;
+    height: 0px;
+    margin-left: 200px;
+    margin-top: 200px;
    }
    /*propiedades del titulo */
 
@@ -213,11 +219,11 @@ body {
  } 
   #text4{
     margin-right: 490px;
-    margin-top: 350px;
+    margin-top: 200px;
     font-family: 'Feather Bold';
     color: #808080;
    }
-   
+
    #ingles{
     background-color: #ffffff;
     color: #1695df;
@@ -225,6 +231,12 @@ body {
     margin-right:700px;
     min-width: 30%;
   }
+  #gify6{
+    width: 100px;
+    height: 0px;
+    margin-left: 700px;
+    margin-top: 100px;
+   }
  /*propiedades del texto 5 con su respectivo titulo y del boton que esta debajo*/
  #titulo6{
   color: #58cc02;
@@ -243,6 +255,7 @@ body {
     margin-left:600px;
     min-width: 30%;
   }
+ 
 
    /*propiedades del texto 6 con su respectivo titulo y del boton que esta debajo*/
    #titulo7{
@@ -300,8 +313,7 @@ body {
   /*propiedades del sticky*/
   #navbar {
     height: 100px;
-    margin-right: 988px;
-    display: flexbox;
+    margin-right: 1045px;
     padding: 10px;
     text-decoration: none;
   }
@@ -315,9 +327,7 @@ body {
     top: -13px;
     width: 100%;
   }
-  .sticky + .content {
-    padding-top: 60px;
-  }
+ 
   
 
 

@@ -96,7 +96,11 @@ document.body.appendChild(body_4);
 
 //creacion del cuarto texto
 const body_5=document.createElement("body5")
-body_5.innerHTML=`<div id="text3">
+body_5.innerHTML=`<div class="gif6">
+<div id="gify5"
+<a href="../HTML/body.html">
+<img src="../CSS/images/giphy5.gif"></div></div>
+<div id="text3">
 <div id="titulo4">
 <h3>aprendizaje <br>personalizado</h3></div>
 <p>Al combinar lo mejor de la inteligencia artificial y las ciencias de 
@@ -130,7 +134,11 @@ titulo1.innerHTML=`
     
 //primer texto con botones
 const body_7=document.createElement("body7")
-body_7.innerHTML=`<div id="text4">
+body_7.innerHTML=`<div class="gif7">
+<div id="gify6"
+<a href="../HTML/body.html">
+<img src="../CSS/images/giphy6.gif"></div></div>
+<div id="text4">
 <div id="titulo5">
 <h3>duolingo english test</h3></div>
 <p>Nuestro examen de inglés es conveniente, rápido y económico. <br>
