@@ -40,11 +40,10 @@ gratis de aprender un idioma!</h1>
     document.body.appendChild(texto);
 
     //creacion de las clases para los botones
-const body_1=document.createElement("body_1");
-body_1.className="div";
+const body_1=document.createElement("div");
 body_1.innerHTML=` <div class="text-buttons">
 <button id="login" type="button">Empieza ahora</button>
-<button id="login2" class="text-buttons2" type="button">Ya tengo una cuenta</button>
+<button id="login2" class="text-buttons" type="button">Ya tengo una cuenta</button>
     </div>`;
     document.body.appendChild(body_1);
 
@@ -120,16 +119,18 @@ document.body.appendChild(body_6);
 
 
 //creacion de la seccion de super duolingo
-const titulo1=document.createElement("titulo1");
-titulo1.className="div";
+const titulo1=document.createElement("div");
 titulo1.innerHTML=` 
-<div class="gif2">
+<div class="gif2"
 <div id="gify"
 <a href="../HTML/body.html">
-<img src="../CSS/images/gifazul.gif"></div></div>
-<div class="text-buttons2">
-<button id="prueba" type="button"> PRUEBA 2 SEMANAS GRATIS</button>
-    </div>`;
+<img src="../CSS/images/gifazul.gif">
+<div id="texto8"
+<p>POWER UP WITH <BR>
+SUPER DUOLINGO</p>
+<div class="text-buttons2"> 
+<button id="prueba"> PRUEBA 2 SEMANAS GRATIS</button></div>
+   </div></div></div>`;
     document.body.appendChild(titulo1);
     
 //primer texto con botones
