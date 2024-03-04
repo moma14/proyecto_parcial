@@ -9,14 +9,12 @@ estilement.textContent =`@import url(https://db.onlinewebfonts.com/c/ab596f2166
     float: right;
   }
   .btnenca{
-    align-items:flex-start;
     display: flex;
-    white-space: nowrap;
     border: none;
     cursor: pointer;
     user-select: none;
     background-color: #ffffff;
-    
+    margin-right: 900px;
   }
   .spanenca{
     font-family: "Bahnschrift SemiBold";
@@ -26,7 +24,7 @@ estilement.textContent =`@import url(https://db.onlinewebfonts.com/c/ab596f2166
     font-size:16px;
     letter-spacing: -0.15px;
     margin-top: 19px;
-    margin-left: 600px;
+    margin-left: 800px;
   }
 
   /*FIN DEL MENU*/
@@ -344,9 +342,8 @@ estilement.textContent =`@import url(https://db.onlinewebfonts.com/c/ab596f2166
 
 //Creacion de toda la parte del encabezado incluyendo el logo, la parte del menu y un sticky para que no se mueva 
 //el encabezado al bajar por la pagina
-const sticky=document.createElement("sticky1");
+const sticky=document.createElement("header");
 sticky.innerHTML=`<div class="header" >
-<div id="navbar" >
 <div class="sticky" >
 <button class="btnenca">
 <a href="../HTML/body.html"></a>
@@ -566,7 +563,7 @@ body_11.innerHTML=`<div id="titulo9">
 
 document.body.appendChild(body_11);
 
-const boton5=document.createElement("boton3");
+const boton5=document.createElement("div");
 boton5.className="div";
 boton5.innerHTML=` 
 <div class="text-buttons6">
@@ -574,6 +571,24 @@ boton5.innerHTML=`
     </div>`;
     document.body.appendChild(boton5);
 
+const piepage=document.createElement("footer")
+piepage.innerHTML=`<div class="contenido">
+<div>
+<div class="tipoFooter">Sobre nosotros</div>
+<ul>
+<li><a href="">Cursos</a></li>
+<li><a href="">Mision</a></li>
+<li><a href="">Metodo de enseñanza</a></li>
+<li><a href="">Eficacia</a></li>
+<li><a href="">Equipo</a></li>
+<li><a href="">Investigacion</a></li>
+<li><a href="">Empleo</a></li>
+<li><a href="">Guia para uso de marca</a></li>
+<li><a href="">Tienda</a></li>
+<li><a href="">Prensa</a></li>
+<li><a href="">Inversionistas</a></li>
+<li><a href="">Contactanos</a></li>
+</ul>`
 
 
 
