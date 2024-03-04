@@ -41,7 +41,7 @@ gratis de aprender un idioma!</h1>
 
     //creacion de las clases para los botones
 const body_1=document.createElement("div");
-body_1.innerHTML=` <div class="text-buttons"
+body_1.innerHTML=` <div class="text-buttons">
 <button id="login" type="button">Empieza ahora</button>
 <button id="login2" class="text-buttons" type="button">Ya tengo una cuenta</button>
     </div>`;
