@@ -41,7 +41,7 @@ gratis de aprender un idioma!</h1>
 
     //creacion de las clases para los botones
 const body_1=document.createElement("div");
-body_1.innerHTML=` <div class="text-buttons">
+body_1.innerHTML=` <div class="text-buttons"
 <button id="login" type="button">Empieza ahora</button>
 <button id="login2" class="text-buttons" type="button">Ya tengo una cuenta</button>
     </div>`;
@@ -125,9 +125,8 @@ titulo1.innerHTML=`
 <div id="gify"
 <a href="../HTML/body.html">
 <img src="../CSS/images/gifazul.gif">
-<div id="texto8"
-<p>POWER UP WITH <BR>
-SUPER DUOLINGO</p>
+<div id="super">
+<img src="../CSS/images/super.svg"></div>
 <div class="text-buttons2"> 
 <button id="prueba"> PRUEBA 2 SEMANAS GRATIS</button></div>
    </div></div></div>`;
@@ -224,9 +223,16 @@ boton4.innerHTML=`
 const body_11=document.createElement("body11")
 body_11.innerHTML=`<div id="titulo9">
 <h3>aprende idiomas<br> con duolingo</h3></div>`;
+
 document.body.appendChild(body_11);
 
-
+const boton5=document.createElement("boton3");
+boton5.className="div";
+boton5.innerHTML=` 
+<div class="text-buttons6">
+<button id="ingles5" type="button"> EMPIEZA AHORA</button>
+    </div>`;
+    document.body.appendChild(boton5);
 
 
 
