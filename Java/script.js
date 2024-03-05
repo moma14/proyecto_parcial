@@ -337,8 +337,75 @@ estilement.textContent =`@import url(https://db.onlinewebfonts.com/c/ab596f2166
     border-color: #449e04;
     justify-content: center;
     min-width: 400px;
-  }`;
-  document.body.appendChild(estilement);
+  }
+
+  footer{
+    background-color: #51c002;
+   /* Centra horizontalmente el contenido */
+    margin-top: -10px;
+    margin:100px;
+    width:100%;
+  }
+  footer{/Clase para el contenido del footer/
+  background: rgb(84,204,2,1);
+}
+.contenido{
+  display: grid;
+  gap: 20px;
+  grid-template-columns: minmax(0, 216px);
+  margin: 100 auto;
+  max-width: 375px;
+  overflow-wrap: anywhere;
+  padding: 96px 32px 64px;
+}
+.tipoFooter ul{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.contenido a{
+  color: rgb(165,237,110);
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 22px;
+}
+@media screen and (min-width: 1080px){/clase responsiva del footer/
+    .contenedor{
+        gap: 24px;
+        grid-template-columns: repeat(5, 178px);
+        max-width: 988px;
+        padding: 96px 0 64px;
+    }
+    .contenido{
+      align-content: start;
+      display: grid;
+      gap: 32px;
+  }
+  .tipoFooter{
+    color: rgb(215,255,184);
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 12px;
+}
+#sobre2{
+  margin-left:300px;
+  margin-top:-485px;
+}
+#sobre3{
+  margin-left:600px;
+  margin-top:-370px;
+}
+#sobre4{
+  margin-left:900px;
+  margin-top:-265px;
+}
+#sobre5{
+  margin-left:1200px;
+  margin-top:-310px;
+}
+  `;
+  document.head.appendChild(estilement);
 
 //Creacion de toda la parte del encabezado incluyendo el logo, la parte del menu y un sticky para que no se mueva 
 //el encabezado al bajar por la pagina
@@ -352,7 +419,6 @@ sticky.innerHTML=`<div class="header" >
         ESPAÑOL
     </span>
  </button>
- </div>
  </div>
  </div>`;
 document.body.appendChild(sticky);
@@ -370,7 +436,7 @@ document.body.appendChild(gif12);
 //creacion de un arreglo para automatizar la insercion de los elementos del menu
 
 //creacion del texto en grande principal de la pagina
-const texto=document.createElement("texto");
+const texto=document.createElement("div");
 texto.className="div";
 texto.innerHTML=`    <div class="text">
 <h1>¡La forma divertida, efectiva y <br>
@@ -494,7 +560,7 @@ boton.innerHTML=`
     document.body.appendChild(boton);
 
 //segundo texto con botones
-const body_8=document.createElement("body8")
+const body_8=document.createElement("div")
 body_8.innerHTML=`<div id="text5">
 <div id="titulo6">
 <h3>duolingo for schools</h3></div>
@@ -572,23 +638,83 @@ boton5.innerHTML=`
     document.body.appendChild(boton5);
 
 const piepage=document.createElement("footer")
-piepage.innerHTML=`<div class="contenido">
+piepage.className="footer";
+piepage.innerHTML=`<div class="contenedor">
+<div class="contenido">
 <div>
-<div class="tipoFooter">Sobre nosotros</div>
+<div class="tipoFooter" id="sobre">Sobre nosotros</div>
 <ul>
-<li><a href="">Cursos</a></li>
-<li><a href="">Mision</a></li>
-<li><a href="">Metodo de enseñanza</a></li>
-<li><a href="">Eficacia</a></li>
-<li><a href="">Equipo</a></li>
-<li><a href="">Investigacion</a></li>
-<li><a href="">Empleo</a></li>
-<li><a href="">Guia para uso de marca</a></li>
-<li><a href="">Tienda</a></li>
-<li><a href="">Prensa</a></li>
-<li><a href="">Inversionistas</a></li>
-<li><a href="">Contactanos</a></li>
-</ul>`
+<li><a href="#">Cursos</a></li>
+<li><a href="#">Mision</a></li>
+<li><a href="#">Metodo de enseñanza</a></li>
+<li><a href="#">Eficacia</a></li>
+<li><a href="#">Equipo</a></li>
+<li><a href="#">Investigacion</a></li>
+<li><a href="#">Empleo</a></li>
+<li><a href="#">Guia para uso de marca</a></li>
+<li><a href="#">Tienda</a></li>
+<li><a href="#">Prensa</a></li>
+<li><a href="#">Inversionistas</a></li>
+<li><a href="#">Contactanos</a></li>
+</ul>
+</div>
+</div>
+<div class="contenido"id="sobre2">
+<div>
+<div class="tipoFooter" >Productos</div>
+<ul>
+<li><a href="#">Duolingo</a></li>
+<li><a href="#">Duolingo for schools</a></li>
+<li><a href="#">Duolingo English test</a></li>
+<li><a href="#">Podcast</a></li>
+<li><a href="#">Duolingo for Business</a></li>
+<li><a href="#">Super Duolingo</a></li>
+<li><a href="#">Regala Súper Duolingo</a></li>
+</ul>
+</div>
+</div>
+<div class="contenido" id="sobre3">
+<div>
+<div class="tipoFooter" >Aplicaciones</div>
+<ul>
+<li><a href="#">Duolingo para Android</a></li>
+<li><a href="#">Duolingo para IOS</a></li>
+</ul>
+</div>
+</div>
+<div class="contenido" id="sobre4">
+<div>
+<div class="tipoFooter" >Ayuda y soporte</div>
+<ul>
+<li><a href="#">App para Duolingo</a></li>
+<li><a href="#">Schools</a></li>
+<li><a href="#">Duolingo English Test</a></li>
+<li><a href="#">Estado</a></li>
+</ul>
+</div>
+</div>
+<div class="contenido"id="sobre5">
+<div>
+<div class="tipoFooter" >Terminos y privacidad</div>
+<ul>
+<li><a href="#">Normas de la comunidad</a></li>
+<li><a href="#">Terminos</a></li>
+<li><a href="#">Privacidad</a></li>
+</ul>
+</div>
+<div class="tipoFooter" id="sobre6">Social</div>
+<ul>
+<li><a href="#">Blog</a></li>
+<li><a href="#">Instagram</a></li>
+<li><a href="#">Facebook</a></li>
+<li><a href="#">Twitter</a></li>
+<li><a href="#">Youtube</a></li>
+</ul>
+</div>
+</div>
+</div>
+`;
+document.body.appendChild(piepage);
 
 
 
