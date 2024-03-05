@@ -4,38 +4,40 @@ const estilement = document.createElement('style');
 estilement.textContent =`@import url(https://db.onlinewebfonts.com/c/ab596f21664c5582567537d241e2a53e?family=DIN+Next+Rounded+LT+W01+Regular);
 @import url(https://db.onlinewebfonts.com/c/14936bb7a4b6575fd2eee80a3ab52cc2?family=Feather+Bold);
 
-  /* estilo para el menu de arriba a la derecha*/
-  .enca-right {
-    float: right;
-  }
-  .btnenca{
-    display: flex;
-    border: none;
-    cursor: pointer;
-    user-select: none;
-    background-color: #ffffff;
-    margin-right: 900px;
-  }
-  .spanenca{
-    font-family: "Bahnschrift SemiBold";
-    font-weight: bolder;
-    color: rgb(70, 68, 68);
-    opacity: 0.5;
-    font-size:16px;
-    letter-spacing: -0.15px;
-    margin-top: 19px;
-    margin-left: 800px;
-  }
+header {
+  background-color: #ffffff;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  width:112%;
+  height: 70px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 20px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  margin:center;
+}
 
-  /*FIN DEL MENU*/
+.btnenca {
+  display: flex;
+  border: none;
+  cursor: pointer;
+  user-select: none;
+  background-color: #ffffff;
+  
+}
 
-/*Posicion de todo el encabezado*/
-  .header{
- 
-    margin-right: 800px;
-    margin-top: 11px;
-    cursor: pointer;
-  }
+.spanenca {
+  font-family: "Bahnschrift SemiBold";
+  font-weight: bolder;
+  color: rgb(70, 68, 68);
+  opacity: 0.5;
+  font-size: 16px;
+  letter-spacing: -0.15px;
+  margin-left: 650px;
+  width:100%;
+}
   /*FIN DEL encabezado*/
 
   /*posicionamiento y tamaño del gif principal*/
@@ -342,9 +344,9 @@ estilement.textContent =`@import url(https://db.onlinewebfonts.com/c/ab596f2166
   footer{
     background-color: #51c002;
    /* Centra horizontalmente el contenido */
-    margin-top: -10px;
+    margin-top: -100px;
     margin:100px;
-    width:100%;
+    width:115%;
   }
   footer{/Clase para el contenido del footer/
   background: rgb(84,204,2,1);
@@ -353,7 +355,7 @@ estilement.textContent =`@import url(https://db.onlinewebfonts.com/c/ab596f2166
   display: grid;
   gap: 20px;
   grid-template-columns: minmax(0, 216px);
-  margin: 100 auto;
+  margin: 0 auto;
   max-width: 375px;
   overflow-wrap: anywhere;
   padding: 96px 32px 64px;
@@ -366,14 +368,13 @@ estilement.textContent =`@import url(https://db.onlinewebfonts.com/c/ab596f2166
 .contenido a{
   color: rgb(165,237,110);
   font-size: 15px;
-  font-weight: 700;
+  font-weight: 900;
   line-height: 22px;
 }
 @media screen and (min-width: 1080px){/clase responsiva del footer/
     .contenedor{
         gap: 24px;
         grid-template-columns: repeat(5, 178px);
-        max-width: 988px;
         padding: 96px 0 64px;
     }
     .contenido{
@@ -388,20 +389,28 @@ estilement.textContent =`@import url(https://db.onlinewebfonts.com/c/ab596f2166
     line-height: 1.4;
     margin-bottom: 12px;
 }
+#sobre1{
+  margin-left:150px;
+  margin-top:100px;
+}
 #sobre2{
-  margin-left:300px;
-  margin-top:-485px;
+  margin-left:380px;
+  margin-top:-500px;
 }
 #sobre3{
   margin-left:600px;
-  margin-top:-370px;
+  margin-top:-420px;
 }
 #sobre4{
-  margin-left:900px;
-  margin-top:-265px;
+  margin-left:800px;
+  margin-top:-285px;
 }
 #sobre5{
-  margin-left:1200px;
+  margin-left:1000px;
+  margin-top:-330px;
+}
+#sobre6{
+  margin-left:1250px;
   margin-top:-310px;
 }
   `;
@@ -409,19 +418,16 @@ estilement.textContent =`@import url(https://db.onlinewebfonts.com/c/ab596f2166
 
 //Creacion de toda la parte del encabezado incluyendo el logo, la parte del menu y un sticky para que no se mueva 
 //el encabezado al bajar por la pagina
-const sticky=document.createElement("header");
-sticky.innerHTML=`<div class="header" >
-<div class="sticky" >
-<button class="btnenca">
-<a href="../HTML/body.html"></a>
- <img src="../CSS/images/f92d5f2f7d56636846861c458c0d0b6c.svg">
-    <span class="spanenca">IDIOMA DE LA PÁGINA: 
-        ESPAÑOL
-    </span>
- </button>
- </div>
- </div>`;
-document.body.appendChild(sticky);
+const header = document.createElement("header");
+header.innerHTML = `
+<div class="btnenca">
+<a href="../HTML/body.html">
+<img src="../CSS/images/f92d5f2f7d56636846861c458c0d0b6c.svg">
+</a>
+<span class="spanenca">IDIOMA DE LA PÁGINA: ESPAÑOL</span>
+</div>
+`;
+ document.body.appendChild(header);
 
 
 //insercion del gif principal 
@@ -640,9 +646,9 @@ boton5.innerHTML=`
 const piepage=document.createElement("footer")
 piepage.className="footer";
 piepage.innerHTML=`<div class="contenedor">
-<div class="contenido">
+<div class="contenido"id="sobre1">
 <div>
-<div class="tipoFooter" id="sobre">Sobre nosotros</div>
+<div class="tipoFooter" >Sobre nosotros</div>
 <ul>
 <li><a href="#">Cursos</a></li>
 <li><a href="#">Mision</a></li>
@@ -702,7 +708,10 @@ piepage.innerHTML=`<div class="contenedor">
 <li><a href="#">Privacidad</a></li>
 </ul>
 </div>
-<div class="tipoFooter" id="sobre6">Social</div>
+</div>
+<div class="contenido"id="sobre6">
+<div>
+<div class="tipoFooter" >Social</div>
 <ul>
 <li><a href="#">Blog</a></li>
 <li><a href="#">Instagram</a></li>
@@ -710,6 +719,7 @@ piepage.innerHTML=`<div class="contenedor">
 <li><a href="#">Twitter</a></li>
 <li><a href="#">Youtube</a></li>
 </ul>
+</div>
 </div>
 </div>
 </div>
