@@ -402,7 +402,7 @@ header {
 }
 #sobre1{
   margin-left:150px;
-  margin-top:100px;
+  margin-top:-80px;
 }
 #sobre2{
   margin-left:380px;
