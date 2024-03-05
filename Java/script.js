@@ -41,7 +41,7 @@ header {
   /*FIN DEL encabezado*/
 
   /*posicionamiento y tamaño del gif principal*/
-  .gif{
+  #pajarito{
     height: 100px;
     margin-right: 400px;
     margin-top: -50px;
@@ -185,25 +185,37 @@ header {
    /*propiedades del titulo */
 
    /*configuracion del super duolingo*/
-   .gif2{
-    display: flex;
-    width: 100%;
-    
-    height: 400px;
-    
-  }
-   #gify{
-    display: flex;
-    justify-content:center;
+  
+   .container {
     background-color: #0c0666;
-    margin-right:335px;
-    margin-top: 100px;
-    height: 400px;
-   }
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px; 
+    height:550px;
+}
+
+.gif-container {
+    width: 50%; 
+    margin-left:300px;
+    
+}
+
+#gify.gif {
+    width: 100%; 
+    height:100%;
+    margin-left:900px;
+}
+
+.button-container {
+    width: 50%; 
+    margin-left:400px;
+    margin-top:150px;
+}
    #super{
   display: flex;
-   margin-left: 450px;
-   margin-top: 50px;
+   margin-left: 800px;
+   margin-top: -250px;
    width: 100%;
     height: 80px;
    }
@@ -212,7 +224,7 @@ header {
     background-color: #ffffff;
     color: #1695df;
     border-color: #e6d7d7;
-    margin-left:-750px;
+    margin-left:-650px;
     margin-top: 200px;
     min-width: 30%;
     height: 65px;
@@ -329,11 +341,7 @@ header {
     padding: 16px;
   }
   
-  .sticky {
-    position: fixed;
-    top: -13px;
-    width: 100%;
-  }
+  
   #ingles5{
     background-color: #51c002;
     border-color: #449e04;
@@ -432,7 +440,7 @@ header.innerHTML = `
 
 //insercion del gif principal 
 const gif12=document.createElement("gif123");
-gif12.innerHTML=`<div class="gif">
+gif12.innerHTML=`<div class="gif" id="pajarito">
 <a href="../HTML/body.html">
 <img src="../CSS/images/giphy4.gif">
 </div>`;
@@ -528,18 +536,27 @@ document.body.appendChild(body_6);
 //creacion de una clase para la insercion de un gif
 
 //creacion de la seccion de super duolingo
-const titulo1=document.createElement("div");
-titulo1.innerHTML=` 
-<div class="gif2"
-<div id="gify"
+const titulo1 = document.createElement("div");
+titulo1.innerHTML = `
+<div class="container">
+<div class="gif-container">
+<div id="gify">
 <a href="../HTML/body.html">
-<img src="../CSS/images/gifazul.gif">
+<img class="gif" src="../CSS/images/gifazul.gif">
 <div id="super">
-<img src="../CSS/images/super.svg"></div>
-<div class="text-buttons2"> 
-<button id="prueba"> PRUEBA 2 SEMANAS GRATIS</button></div>
-   </div></div></div>`;
-    document.body.appendChild(titulo1);
+ <img src="../CSS/images/super.svg">
+</div>
+</a>
+</div>
+</div>
+<div class="button-container">
+<div class="text-buttons2">
+<button id="prueba">PRUEBA 2 SEMANAS GRATIS</button>
+</div>
+ </div>
+</div>
+`;
+document.body.appendChild(titulo1);
     
 //primer texto con botones
 const body_7=document.createElement("body7")
