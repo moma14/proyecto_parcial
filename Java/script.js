@@ -25,7 +25,7 @@ header {
   cursor: pointer;
   user-select: none;
   background-color: #ffffff;
-  
+  margin-left: 10px;
 }
 
 .spanenca {
@@ -35,7 +35,7 @@ header {
   opacity: 0.5;
   font-size: 16px;
   letter-spacing: -0.15px;
-  margin-left: 650px;
+  margin-left: 900px;
   width:100%;
 }
   /*FIN DEL encabezado*/
@@ -43,7 +43,7 @@ header {
   /*posicionamiento y tamaño del gif principal*/
   #pajarito{
     height: 100px;
-    margin-right: 400px;
+    margin-right: 600px;
     margin-top: -50px;
   }
   /*FIN DEL gif principal*/
@@ -157,14 +157,16 @@ header {
     margin-left: 700px;
     margin-top: 100px;
    }
-
-   #titulo10{
+   /*propiedades del titulo en grande azul */
+   #titulo10 {
+    text-align: center;
     align-items: center;
-    margin-top: 300px;
+    margin-top: 250px; 
     color: #0c0666;
     font-family: 'Feather Bold';
-    font-size: 255%;
-   } 
+    font-size: 355%;
+}
+
 /*propiedades del texto 4 con su respectivo titulo y del boton que esta debajo*/
    #titulo4{
     color: #58cc02;
@@ -182,7 +184,7 @@ header {
     margin-left: 200px;
     margin-top: 200px;
    }
-   /*propiedades del titulo */
+   
 
    /*configuracion del super duolingo*/
   
@@ -315,11 +317,12 @@ header {
   }
 
    #titulo9{
+    text-align: center;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 250px; 
     color: #58cc02;
     font-family: 'Feather Bold';
-    font-size: 350%;
+    font-size: 355%;
    }
 
 
@@ -461,9 +464,10 @@ gratis de aprender un idioma!</h1>
     //creacion de las clases para los botones
 const body_1=document.createElement("div");
 body_1.innerHTML=` <div class="text-buttons">
+<a href="../HTML/body.html">
 <button id="login" type="button">Empieza ahora</button>
 <button id="login2" class="text-buttons" type="button">Ya tengo una cuenta</button>
-    </div>`;
+    </a></div>`;
     document.body.appendChild(body_1);
 
     //aqui van las banderas
@@ -541,18 +545,16 @@ titulo1.innerHTML = `
 <div class="container">
 <div class="gif-container">
 <div id="gify">
-<a href="../HTML/body.html">
 <img class="gif" src="../CSS/images/gifazul.gif">
 <div id="super">
  <img src="../CSS/images/super.svg">
 </div>
-</a>
 </div>
 </div>
 <div class="button-container">
-<div class="text-buttons2">
+<div class="text-buttons2"><a href="../HTML/body.html">
 <button id="prueba">PRUEBA 2 SEMANAS GRATIS</button>
-</div>
+</a></div>
  </div>
 </div>
 `;
@@ -578,8 +580,9 @@ const boton=document.createElement("boton1");
 boton.className="div";
 boton.innerHTML=` 
 <div class="text-buttons3">
+<a href="../HTML/body.html">
 <button id="ingles" type="button"> CERTIFICA TU INGLES</button>
-    </div>`;
+    </a></div>`;
     document.body.appendChild(boton);
 
 //segundo texto con botones
@@ -599,8 +602,9 @@ const boton2=document.createElement("boton2");
 boton2.className="div";
 boton2.innerHTML=` 
 <div class="text-buttons4">
+<a href="../HTML/body.html">
 <button id="ingles2" type="button"> POTENCIA TU SALON DE CLASES</button>
-    </div>`;
+    </a></div>`;
     document.body.appendChild(boton2);
 
 //tercer texto con botones
@@ -620,8 +624,9 @@ const boton3=document.createElement("boton3");
 boton3.className="div";
 boton3.innerHTML=` 
 <div class="text-buttons5">
+<a href="../HTML/body.html">
 <button id="ingles3" type="button"> CONOCE DUOLINGO ABC</button>
-    </div>`;
+    </a></div>`;
     document.body.appendChild(boton3);
     
 //cuarto texto con botones
@@ -642,8 +647,9 @@ const boton4=document.createElement("boton4");
 boton4.className="div";
 boton4.innerHTML=` 
 <div class="text-buttons5">
+<a href="../HTML/body.html">
 <button id="ingles4" type="button"> MEJORA EN MATEMATICA</button>
-    </div>`;
+    </a></div>`;
     document.body.appendChild(boton4);
 
 const body_11=document.createElement("body11")
@@ -656,7 +662,9 @@ const boton5=document.createElement("div");
 boton5.className="div";
 boton5.innerHTML=` 
 <div class="text-buttons6">
+<a href="../HTML/body.html">
 <button id="ingles5" type="button"> EMPIEZA AHORA</button>
+</a>
     </div>`;
     document.body.appendChild(boton5);
 
